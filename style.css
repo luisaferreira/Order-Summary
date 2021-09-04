@@ -1,7 +1,9 @@
 body {
     background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
     color: hsl(224, 23%, 55%);
 }
+
 
 body, input {
     font-family: 'Red Hat Display', sans-serif;
@@ -9,8 +11,8 @@ body, input {
 
 .container-principal {
     background: #fff;
-    width: 480px;
-    margin: 7% auto 3%;
+    width: 400px;
+    margin: 3% auto 1%; 
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 20px 20px rgba(118, 108, 241, 0.2);
@@ -18,7 +20,7 @@ body, input {
 
 .image {
     display: block;
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 15px 15px 0 0;
 }

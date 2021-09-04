@@ -4,7 +4,6 @@ body {
     color: hsl(224, 23%, 55%);
 }
 
-
 body, input {
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -76,7 +75,7 @@ body, input {
     font-weight: bold;
 }
 
-.annual-plan a:hover {
+.annual-plan a:hover, .attribution a:hover {
     color: rgb(118, 108, 241);
     text-decoration: none;
 }
@@ -112,4 +111,57 @@ body, input {
 
 .button-no-back:hover {
     color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: 700;
+  }
+
+/* Layout mobile */
+@media (max-width: 376px) {
+    body {
+        background:hsl(225, 100%, 94%) url(images/pattern-background-mobile.svg) no-repeat;
+        font-size: 14px;
+    }
+
+    .container-principal {
+        width: 87%;
+        margin: 11% auto 3%;
+    }
+
+    .heading {
+        font-size: 23px;
+        /* vertical | horizontal */
+        /* top | right | bottom | left */
+        margin: 35px 0 20px 0;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        width: 77%;
+        margin-bottom: 20px;
+    }
+
+    .annual-plan {
+        width: 86%;
+        margin-bottom: 23px;
+    }
+
+    .button-payment {
+        width: 86%;
+        padding: 15px 0;
+        margin-bottom: 25px;
+        font-size: 15px;
+        box-shadow: 0 20px 13px rgba(118, 108, 241, 0.2);
+    }
+
+    .button-no-back {
+        margin-bottom: 25px;
+    }
 }
